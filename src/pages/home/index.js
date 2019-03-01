@@ -8,7 +8,7 @@ import './index.sass';
 export default () => {
 
   new Vue({
-    el: '#test-vue',
+    el: '#main',
     render: createElem => createElem(AppVue),
   });
 

@@ -1,5 +1,6 @@
 <template lang="pug">
-  .test-vue test Vue
+    #main
+        h1 hello world
 </template>
 
 <script>
