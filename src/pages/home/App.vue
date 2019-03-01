@@ -1,16 +1,20 @@
-<template lang="pug">
-    #main
-        h1 hello world
+<template>
+  <div id="app">
+    <header-top></header-top>
+    <banner></banner>
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'App',
-  };
+
+import Banner from './Banner/Banner'
+import HeaderTop from './Header/Header'
+
+export default {
+  components: {
+    Banner,
+    HeaderTop,
+  }
+}
 </script>
 
-<style lang="sass">
-.test-vue
-  background: $color-text-base
-  color: #fff
-</style>
