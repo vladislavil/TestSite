@@ -8,14 +8,14 @@ head
   meta(name='description' content='')
   //link(rel='shortcut icon' href="${require('')}" type='image/x-icon')
   //link(rel='apple-touch-icon' href="${require('')}" type='image/png')
-  link(rel='stylesheet' href='css/vendors.css?' + hash)
+  //- link(rel='stylesheet' href='css/vendors.css?' + hash)
   link(rel='stylesheet' href='css/app.css?' + hash)
 body
   .wrapper
-    //include header/header
+    include header/header
     .content
       main.main
         block content
-    //include footer/footer
+    include footer/footer
   script(src='js/vendors.js?' + hash)
   script(src='js/app.js?' + hash)

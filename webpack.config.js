@@ -17,7 +17,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 const SERVER_HOST = 'localhost';
@@ -128,7 +127,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|es6)$/,
+        test: /\.(js|es6)$/,
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,
@@ -136,10 +135,6 @@ const config = {
         exclude: [
           path.resolve(__dirname, 'node_modules'),
         ],
-      },
-      {
-        test: /\.vue$/,
-        use: 'vue-loader',
       },
       {
         test: /\.(jpe?g|png|gif|svg|ico)$/i,
@@ -282,7 +277,7 @@ const config = {
       path.resolve(__dirname, 'node_modules'),
       path.resolve(__dirname, 'src'),
     ],
-    extensions: ['*', '.js', '.es6', '.jsx', '.vue', '.css', '.scss', '.sass'],
+    extensions: ['*', '.js', '.es6', '.css', '.scss', '.sass'],
   },
 
   devtool: 'source-map',
@@ -307,8 +302,7 @@ const config = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-    }),
-    new VueLoaderPlugin(),
+    })
   ],
 };
 
