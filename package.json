@@ -39,8 +39,6 @@
     "pug-html-loader": "git+https://github.com/willyelm/pug-html-loader.git",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "sass-loader": "^7.3.1",
     "sass-resources-loader": "^2.0.3",
     "style-loader": "^0.23.1",
