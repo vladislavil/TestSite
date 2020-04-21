@@ -1,4 +1,156 @@
 .footer
+  position: relative
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+  background-color: #f6f3ff
+  padding: px-to-vw(100px, $desktop_md) 0 px-to-vw(90px, $desktop_md)
+
+  // &::before
+  //   content: ""
+  //   position: absolute
+  //   bottom: px-to-vw(91px, $desktop_md)
+  //   left: px-to-vw(166px, $desktop_md)
+  //   width: 13px
+  //   height: 13px
+  //   background-image: url("./circle.png")
+  //   background-repeat: no-repeat
+  //   background-position: center
+  //   background-size: contain
+
+  // &::after
+  //   content: ""
+  //   position: absolute
+  //   bottom: px-to-vw(76px, $desktop_md)
+  //   right: px-to-vw(214px, $desktop_md)
+  //   width: 28px
+  //   height: 28px
+  //   background-image: url("./rect.png")
+  //   background-repeat: no-repeat
+  //   background-position: center
+  //   background-size: contain
+
+.footer__top
+  display: flex
+  margin-bottom: 78px
+
+.footer__left-col
+  margin-right: auto
+
+.footer__right-col
+  display: flex
+
+.footer__bottom
+  display: flex
+
+.footer__copyright
+  margin-right: auto
+  color: #242425
+  font-family: Overpass
+  font-size: px-to-vw(16px, $desktop_md)
+  font-weight: 400
+  line-height: 36px
+
+.footer__apps
+  margin-right: auto
+  display: flex
+  align-items: center
+
+.footer__apps-img
+  display: block
+  margin-left: 15px
+  transition: opacity 0.3s
+
+  &:hover,
+  &:focus
+    opacity: 0.7
+
+.footer__list-small
+  display: flex
+
+.footer__item-small
+  margin-right: 10px
+
+  &:last-child
+    margin-right: 0
+
+.footer__link-small
+  color: #242425
+  font-family: Overpass
+  font-size: 16px
+  font-weight: 400
+  line-height: 36px
+  transition: color 0.3s
+
+  &:hover,
+  &:focus
+    color: #ff5c71
+
+.footer__tell, .footer__email, .footer__adress
+  color: #242425
+  font-size: px-to-vw(18px, $desktop_md)
+  font-weight: 400
+  line-height: 28px
+  transition: color 0.3s
+
+.footer__adress
+  margin-bottom: 25px
+
+.footer__tell, .footer__email
+  &:hover,
+  &:focus
+    color: #ff5c71
+
+.footer__icons
+  display: flex
+  align-items: center
+
+.footer__icon
+  margin-right: 30px
+  transition: opacity 0.3s
+
+  &:last-child
+    margin-right: 0
+
+  &:hover,
+  &:focus
+    opacity: 0.7
+
+.footer__company, .footer__solution
+  color: #242425
+  font-size: px-to-vw(18px, $desktop_md)
+  font-weight: 400
+  line-height: 38px
+
+.footer__company
+  margin-right: px-to-vw(181px, $desktop_md)
+
+.footer__link
+  margin-right: auto
+  color: #242425
+  font-size: 18px
+  font-weight: 400
+  line-height: 38px
+  transition: color 0.3s
+
+  &:hover,
+  &:focus
+    color: #ff5c71
+
+.footer__title
+  margin-bottom: 27px
+  color: #242425
+  font-family: $font-nunito-semi
+  font-size: 20px
+  font-weight: 400
+  line-height: 36px
+  text-transform: uppercase
+
+.footer__contacts
+  display: flex
+  flex-direction: column
+  margin-bottom: px-to-vw(76px, $desktop_md)
+
+.footer__logo
+  display: block
+  margin-bottom: 29px

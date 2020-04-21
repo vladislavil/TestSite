@@ -1,0 +1,81 @@
+.seo-cards
+  position: relative
+  overflow: hidden
+  padding: px-to-vw(111px, $desktop_md) 0 px-to-vw(183px, $desktop_md)
+
+  &::after
+    content: ""
+    position: absolute
+    top: -104px
+    right: -419px
+    z-index: -1
+    width: 100%
+    height: 100%
+    background-image: url('./cards-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+
+.seo-cards__row
+  position: relative
+
+.seo-cards__wrapper
+    padding-top: 83.3%;
+    height: 0px
+
+.seo-cards__inner
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  align-items: center
+  margin: 0 -15px
+
+.seo-cards__col
+  width: calc(33.33% - 30px)
+  margin: 0 15px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  &:first-child
+    .seo-cards__card
+      margin-top: px-to-vw(-195px, $desktop_md)
+
+  &:last-child
+    .seo-cards__card
+      margin-top: px-to-vw(-147px, $desktop_md)
+
+.seo-cards__card--mb
+  margin-bottom: 30px
+
+.seo-cards__card
+  min-height: 371px
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: px-to-vw(56px, $desktop_md) px-to-vw(45px, $desktop_md) px-to-vw(112px, $desktop_md) px-to-vw(45px, $desktop_md)
+  box-shadow: 0 0 30px rgba(186, 184, 191, 0.35)
+  border-radius: 10px
+  background-color: #ffffff
+
+.seo-cards__title
+  margin-bottom: 22px
+  color: #282828;
+  font-family: $font-nunito-semi
+  font-size: px-to-vw(26px, $desktop_md)
+  font-weight: 400
+  line-height: 38px
+
+.seo-cards__text
+  color: #282828
+  font-size: px-to-vw(16px, $desktop_md)
+  font-weight: 400
+  line-height: 28px
+  text-align: center
+
+.seo-cards__img
+  width: 114px
+  height: auto
+  margin-bottom: 25px

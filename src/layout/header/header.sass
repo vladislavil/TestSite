@@ -1,0 +1,137 @@
+.header
+  position: relative
+  height: 628px
+  background-color: #19152b
+  opacity: 0.7
+
+  &::before
+    content: ""
+    position: absolute
+    bottom: px-to-vw(91px, $desktop_md)
+    left: px-to-vw(166px, $desktop_md)
+    width: 13px
+    height: 13px
+    background-image: url("./circle.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: px-to-vw(76px, $desktop_md)
+    right: px-to-vw(214px, $desktop_md)
+    width: 28px
+    height: 28px
+    background-image: url("./rect.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+.header__content
+  padding: px-to-vw(76px, $desktop_md)  px-to-vw(100px, $desktop_md) 0
+
+.header__top
+  display: flex
+  align-items: center
+  height: 65px
+
+.header__logo
+  display: block
+  width: 47px
+  flex-grow: 1
+
+.header__nav
+  flex-grow: 2
+
+.header__list
+  display: flex
+
+.header__item
+  margin-right: 30px
+
+  &:last-child
+    margin-right: 0
+
+.header-nav__link
+  position: relative
+  padding-bottom: 3px
+  color: #ffffff
+  font-size: px-to-vw(20px, $desktop_md)
+  font-weight: 400
+  line-height: (20 / 36)
+  text-transform: capitalize
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0
+    height: 2px
+    background-color: #ff3b69
+    transition: all 0.3s
+
+  &:hover
+    &::after
+      width: 100%
+
+
+
+.header__buttons
+  display: flex
+  align-items: center
+  flex-grow: 1
+  justify-content: flex-end
+
+.header__button
+  display: block
+  padding: px-to-vw(23px, $desktop_md) px-to-vw(42px, $desktop_md)
+  margin-right: 40px
+  color: #ffffff
+  border-radius: 30px
+  background-color: #ff3b69
+  font-size: px-to-vw(20px, $desktop_md)
+  font-weight: 400
+  line-height: (20 / 30)
+  transition: opacity 0.3s
+
+  &:hover,
+  &:focus
+    opacity: 0.8
+
+.header__menu
+
+.header__panel
+  position: relative
+  max-width: 932px;
+  padding: px-to-vw(47px, $desktop_md) px-to-vw(65px, $desktop_md) px-to-vw(50px, $desktop_md)
+  background-color: #ffffff
+  border-radius: 10px
+
+.header__row
+  display: flex
+
+.header__col
+  margin-right: auto
+
+  &:last-child
+    margin-right: 0
+
+.header__title
+  margin-bottom: px-to-vw(40px, $desktop_md)
+  color: #282828
+  font-size: px-to-vw(20px, $desktop_md)
+  font-weight: $font-weight-bold
+  line-height: 1.5
+
+.header__link
+  color: #282828
+  font-size: px-to-vw(16px, $desktop_md)
+  font-weight: 400
+  line-height: 25px
+
+.header__text
+  margin-bottom: 11px
+
+
