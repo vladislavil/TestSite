@@ -1,4 +1,98 @@
 .footer
+  background: #F2F2F2
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+
+.footer__content
+  padding: 50px 0 20px
+
+  +max-w($tablet)
+    padding: 35px 0
+
+  +max-w($mobile_lg)
+    padding: 20px 0
+
+.footer__nav
+  margin-right: auto
+
+  +max-w($mobile_lg)
+    width: 100%
+
+.footer__top
+  display: flex
+  align-items: center
+  border-bottom: 1px solid #D3D3D3
+  padding-bottom: 32px
+  margin-bottom: 20px
+
+  +max-w($mobile_lg)
+    justify-content: center
+    flex-wrap: wrap
+    padding-bottom: 15px
+    margin-bottom: 10px
+
+.footer__list
+  display: flex
+
+  +max-w($mobile_lg)
+    justify-content: center
+
+
+.footer__item
+  margin-right: px-to-vw(104, $desktop_md)
+
+  &:last-child
+    margin-right: 0
+
+.footer__link
+  color: #7C8B99
+  font-size: 	1.125rem
+  line-height: 34px
+  text-transform: uppercase
+  transition: color 0.3s
+
+  +max-w($mobile_lg)
+    font-size: 1rem
+
+  &:hover,
+  &:focus
+    color: #000000
+
+.footer__logo
+  display: block
+  max-width: 197px
+  height: auto
+  transition: opacity 0.3s
+
+  &:hover,
+  &:focus
+    opacity: 0.8
+
+  +max-w($laptop_md)
+    max-width: 150px
+
+  +max-w($tablet)
+    max-width: 100px
+
+.footer__bottom
+  display: flex
+  align-items: center
+
+  +max-w($mobile_lg)
+    flex-wrap: wrap
+    justify-content: center
+
+.footer__title
+  margin-right: auto
+  font-family: $font-family-bold
+  font-size: 1.5rem
+  line-height: 29px
+  font-weight: bold
+
+  +max-w($mobile_lg)
+    width: 100%
+    text-align: center
+
+.footer__copyright
+  font-size: 0.875rem

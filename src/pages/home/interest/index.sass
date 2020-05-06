@@ -1,0 +1,53 @@
+.interest
+  height: px-to-vw(319, $desktop_md)
+  background-image: url('./section-bg.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+
+  +max-w($laptop_sm)
+    height: px-to-vw(196, $laptop_sm)
+    background-size: auto
+    background-position: top right
+
+  +max-w($tablet)
+    height: auto
+
+.interest__content
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  +max-w($tablet)
+    padding: 15px 15px
+
+.interest__title
+  margin-bottom: 5px
+  color: #ffffff
+  font-family: $font-family-bold
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 29px
+  text-align: center
+
+.interest__desctiption
+  margin-bottom: px-to-vw(40, $desktop_md)
+  color: #ffffff
+  font-size: 1.125rem
+  line-height: 34px
+  text-align: center
+
+.interest__button
+  padding: px-to-vw(28, $desktop_md) px-to-vw(177, $desktop_md)
+  background: #FFFFFF
+  box-shadow: 0px 15px 15px rgba(255, 255, 255, 0.39)
+  border-radius: 58px
+  font-size: 1rem
+  text-transform: uppercase
+  text-align: center
+  transition: opacity 0.3s
+
+  &:hover,
+  &:focus
+    opacity: 0.8

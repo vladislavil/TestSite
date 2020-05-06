@@ -1,0 +1,209 @@
+.main-content__content
+  display: flex
+  padding: 21px 0 44px
+
+  +max-w($tablet)
+    flex-wrap: wrap
+    padding: 20px 0 20px
+
+.main-content__aside
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 24.7%
+  flex-shrink: 0
+  margin-right: 33px
+  margin-top: -68px
+
+  +max-w($tablet)
+    margin-top: 0
+    flex-shrink: 1
+    width: calc(40% - 33px)
+
+  +max-w($mobile_md)
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+
+.main-content__center
+  width: 38.55%
+  margin-right: 74px
+
+  +max-w($tablet)
+    order: -1
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+
+.main-content__cards-right
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex-grow: 1
+  flex-shrink: 0
+
+  +max-w($laptop_md)
+    flex-shrink: 1
+
+  +max-w($tablet)
+    width: 60%
+
+  +max-w($mobile_md)
+    width: 100%
+
+.main-content__photo
+  margin: 0 auto 14px
+  width: 79px
+  height: auto
+
+.main-content__card
+  padding: 30px 30px 25px
+  background: #FFFFFF
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.08)
+  border-radius: 3px
+
+  &:first-child
+    margin-bottom: 27px
+    padding-top: 45px
+
+  .main-content__text
+    text-align: center
+
+.main-content__author
+  text-align: center
+
+.main-content__author,
+.main-content__socials-title
+  margin-bottom: 10px
+  font-family: $font-family-bold
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 29px
+  color: #25242F
+
+  +max-w($tablet)
+    line-height: 1.5
+
+.main-content__socials-title
+  margin-bottom: 25px
+
+.main-content__icon
+  margin-right: 10px
+
+.main-content__social
+  margin-bottom: 17px
+
+  &:last-child
+    margin-bottom: 0
+
+.main-content__text
+  font-size: 0.875rem
+  line-height: 17px
+  color: #7C8B99
+
+.main-content__socials
+  display: flex
+  flex-direction: column
+
+.main-content__social
+  margin-right: auto
+  display: flex
+  transition: color 0.3s
+  svg
+    fill: #7C8B99
+
+  &:hover,
+  &:focus
+    .main-content__text
+      text-decoration: underline
+
+.main-content__nav
+  margin-bottom: 18px
+
+  +max-w($laptop_sm)
+    margin-bottom: 20px
+
+  +max-w($mobile_lg)
+    margin-bottom: 15px
+
+
+.main-content__list
+  display: flex
+
+.main-content__item
+  margin-right: px-to-vw(45, $desktop_md)
+
+  &:last-child
+    margin-right: 0
+
+.main-content__link
+  font-size: 0.875rem
+  line-height: 17px
+  color: #7C8B99
+  text-transform: uppercase
+  transition: color 0.3s
+
+  &:hover,
+  &:focus
+    color: #000000
+
+.main-content__title
+  margin-bottom: 30px
+  font-family: $font-family-bold
+  font-weight: bold
+  font-size: 3rem
+  line-height: 57px
+  color: #25242F
+
+  +max-w($laptop_sm)
+    line-height: 45px
+    margin-bottom: 20px
+
+  +max-w($mobile_lg)
+    margin-bottom: 15px
+    line-height: 1.5
+
+.main-content__description
+  font-size: 1.125rem
+  line-height: 34px
+  color: #25242F
+
+  +max-w($laptop_sm)
+    line-height: 1.7
+
+.main-content__card-right
+  padding: 26px 32.5px
+  display: flex
+  border: 1px solid #7C8B99
+  box-sizing: border-box
+  border-radius: 3px
+  margin-bottom: 55px
+
+  &:last-child
+    padding-left: 30.5px
+    margin-bottom: 0
+
+    .main-content__ico-right
+      margin-right: 18px
+      width: 54px
+      height: 54px
+
+  +max-w($mobile_md)
+    margin-bottom: 20px
+
+.main-content__ico-right
+  margin-right: 27px
+  width: 45px
+  height: 45px
+
+.main-content__title-text
+  font-family: $font-family-bold
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 29px
+  color: #25242F
+
+.main-content__description-text
+  font-size: 0.875rem
+  line-height: 17px
+  color: #7C8B99

@@ -1,0 +1,34 @@
+.header
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: px-to-vw(182, $desktop_md)
+  background-image: url('./header-bg.jpg')
+  background-size: cover
+  background-position: top right
+  background-repeat: no-repeat
+
+  +max-w($laptop_sm)
+    height: px-to-vw(140, $tablet)
+    background-position: top right
+
+  +max-w($mobile_md)
+    height: 80px
+
+.header__logo
+  display: block
+  max-width: 197px
+  height: auto
+  transition: opacity 0.3s
+
+  &:hover,
+  &:focus
+    opacity: 0.8
+
+  +max-w($laptop_md)
+    max-width: 150px
+
+  +max-w($tablet)
+    max-width: 100px

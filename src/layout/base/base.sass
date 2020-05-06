@@ -25,12 +25,23 @@ body
   margin: 0
   width: 100%
   font-family: $font-family-base
-  font-size: $font-size-base
   font-weight: $font-weight-base
   line-height: $line-height-base
   color: $color-text-base
   text-align: left
   background-color: $color-background
+
+html, body
+  font-size: $font-size-base
+
+  +max-w($laptop_md)
+    font-size: 0.85rem
+
+  +max-w($tablet)
+    font-size: 0.75rem
+
+  +max-w($mobile_md)
+    font-size: 0.65rem
 
 // IE10+ doesn't honor `<meta name="viewport">` in some cases.
 @at-root
@@ -51,3 +62,15 @@ ol, ul
 img
   max-width: 100%
   height: auto
+
+a
+  color: $color-text-base
+  text-decoration: none
+
+.container
+  max-width: calc(1220px + 30px)
+  padding: 0 15px
+  margin: 0 auto
+
+  +max-w($laptop_md)
+    max-width: calc(1000px + 30px)
