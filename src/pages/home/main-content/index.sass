@@ -9,11 +9,10 @@
 .main-content__aside
   display: flex
   flex-direction: column
-  justify-content: center
+  justify-content: flex-start
   width: 24.7%
   flex-shrink: 0
   margin-right: 33px
-  margin-top: -68px
 
   +max-w($tablet)
     margin-top: 0
@@ -24,6 +23,12 @@
     width: 100%
     margin-right: 0
     margin-bottom: 20px
+
+.main-content__cards
+  margin-top: px-to-vw(-65, $desktop_md)
+
+  +max-w($tablet)
+    margin-top: 0
 
 .main-content__center
   width: 38.55%
@@ -52,18 +57,18 @@
     width: 100%
 
 .main-content__photo
-  margin: 0 auto 14px
+  margin: 0 auto 11px
   width: 79px
   height: auto
 
 .main-content__card
-  padding: 30px 30px 25px
+  padding: 20px 30px 25px
   background: #FFFFFF
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.08)
   border-radius: 3px
 
   &:first-child
-    margin-bottom: 27px
+    margin-bottom: 37px
     padding-top: 45px
 
   .main-content__text

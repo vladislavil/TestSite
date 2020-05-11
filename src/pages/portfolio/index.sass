@@ -1,0 +1,107 @@
+.main-content__center.main-content--portfolio
+  width: calc(100% - 24.7%)
+  margin-right: 0
+
+  +max-w($tablet)
+    width: 100%
+
+.main-content__main-portfolio
+  .container
+    +max-w($laptop_md)
+      max-width: calc(1220px + 30px)
+
+.main-content__portfolio--nav
+  margin-bottom: 29px
+
+.main-content__aside--portfolio
+  margin-right: 38px
+
+.main-content__content--portfolio
+  padding: 25px 0 58px
+
+  +max-w($tablet)
+    padding-bottom: 40px
+
+  +max-w($mobile_lg)
+    padding-bottom: 30px
+
+.main-content__cards.main-content__cards--portfolio
+  margin-top: px-to-vw(-71, $desktop_md)
+
+  +max-w($tablet)
+    margin-top: 0
+
+.main-content__aside.main-content__aside--portfolio
+    +max-w($tablet)
+      width: 100%
+      margin-right: 0
+
+.portfolio__title
+  font-family: $font-family-bold
+  font-style: normal
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 29px
+  color: #25242F
+  margin-bottom: 5px
+
+  +max-w($tablet)
+    line-height: 24px
+
+.portfolio__subtitle
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 34px
+  color: #7C8B99
+
+  +max-w($tablet)
+    line-height: 28px
+
+  +max-w($mobile_lg)
+    line-height: 24px
+
+.portfolio__img
+  line-height: 0
+  margin-bottom: 15px
+
+.portfolio__row
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -25px
+
+  +max-w($laptop_md)
+    margin: 0 -15px
+
+  +max-w($tablet)
+    justify-content: space-between
+
+  +max-w($mobile_lg)
+    justify-content: space-around
+
+  +max-w($mobile_sm)
+    margin: 0
+
+.portfolio__col
+  max-width: 33.33%
+
+  +max-w($mobile_lg)
+    max-width: 50%
+
+  +max-w($mobile_sm)
+    max-width: 100%
+
+.portfolio__card
+  display: block
+  padding: 25px
+  transition: border 0.4s
+  border: 1px solid transparent
+  border-radius: 3px
+
+  &:hover,
+  &:focus
+    border-color: #7C8B99
+
+  +max-w($laptop_md)
+    padding: 15px
+

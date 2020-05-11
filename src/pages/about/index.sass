@@ -1,0 +1,101 @@
+.main-content__center.main-content--about
+  width: calc(100% - 24.7%)
+  margin-right: 0
+
+  +max-w($tablet)
+    width: 100%
+
+.main-content__about
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.08)
+  border-radius: 3px
+
+.main-content__about--nav
+  margin-bottom: 29px
+
+.main-content__aside--about
+  margin-right: 38px
+
+.main-content__content--about
+  padding: 25px 0 58px
+
+  +max-w($tablet)
+    padding-bottom: 40px
+
+  +max-w($mobile_lg)
+    padding-bottom: 30px
+
+.main-content__cards.main-content__cards--about
+  margin-top: px-to-vw(-71, $desktop_md)
+
+  +max-w($tablet)
+    margin-top: 0
+
+.main-content__card--about
+  &:first-child
+    margin-bottom: px-to-vw(50, $desktop_md)
+
+  +max-w($tablet)
+    margin-top: 0
+
+.main-content__aside.main-content__aside--about
+    +max-w($tablet)
+      width: 100%
+      margin-right: 0
+
+.about
+  padding: 29px 28px 37px
+
+.about__title
+  font-family: $font-family-bold
+  font-style: normal
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 29px
+  color: #25242F
+  margin-bottom: 12px
+
+.about__subtitle
+  display: flex
+  align-items: center
+  font-style: normal
+  font-weight: normal
+  font-size: 	0.875rem
+  line-height: 17px
+  color: #7C8B99
+  margin-bottom: 28px
+
+  +max-w($mobile_lg)
+    margin-bottom: 15px
+
+.about__icon
+  line-height: 0
+  margin-right: 8px
+
+.about__text
+  font-style: normal
+  font-weight: normal
+  font-size: 1.125rem
+  line-height: 34px
+  margin-bottom: 34px
+
+  +max-w($mobile_lg)
+    margin-bottom: 20px
+    line-height: 1.7
+
+.about__button
+  max-width: 338px
+  padding: px-to-vw(22, $desktop_md) 0
+  display: block
+  border: 1px solid #0075FF
+  border-radius: 37px
+  text-align: center
+  flex-grow: 0
+  margin-right: auto
+  font-weight: 600
+  font-size: 16px
+  color: #25242F
+
+  +max-w($mobile_lg)
+    padding: 10px 0
+    max-width: 100%
+    font-size: 12px

@@ -1,0 +1,69 @@
+extends /layout/app
+
+block content
+  .main-conntent
+    .container
+      .main-content__content.main-content__content--about
+        aside.main-content__aside.main-content__aside--about
+          .main-content__cards.main-content__cards--about
+            .main-content__card.main-content__card--about
+              .main-content__photo
+                img(src="../../images/author-photo.png", alt="author")
+              .main-content__author
+                | Максим Москаленко
+              .main-content__text
+                | Дата рождения: 3 марта 2002 года
+            .main-content__card
+              h2.main-content__socials-title
+                | Мои соц. сети
+              .main-content__socials
+                a(href="#").main-content__social
+                  .main-content__icon
+                    img(src="../../images/vk-icon.png", alt="").main-content__img
+                  .main-content__text
+                    | Вконтакте
+                a(href="#").main-content__social
+                  .main-content__icon
+                    img(src="../../images/inst-icon.png", alt="").main-content__img
+                  .main-content__text
+                    | Instagram
+                a(href="#").main-content__social
+                  .main-content__icon
+                    img(src="../../images/tgm-icon.png", alt="").main-content__img
+                  .main-content__text
+                    | Telegram
+        .main-content__center.main-content--about
+          nav.main-content__nav.main-content__about--nav
+            ul.main-content__list
+              li.main-content__item
+                a.main-content__link(href="index.html")
+                  | главная
+              li.main-content__item
+                a.main-content__link(href="about.html")
+                  | обо мне
+              li.main-content__item
+                a.main-content__link(href="portfolio.html")
+                  | портфолио
+              li.main-content__item
+                a.main-content__link(href="contacts.html")
+                  | контакты
+          .main-content__about
+            .about
+              h2.about__title
+                | Моя биография
+              h4.about__subtitle
+                .about__icon
+                  img(src="../../images/done.png", alt="").about__img
+                | Веб-дизайнер уже более 4-х лет
+              p.about__text
+                | Я родился 3 марта 2002 года в г. Докучаевск.
+                | Когда в 9 лет мне купили компьютер, я очень сильно начал интересоваться дизайном,
+                | пробовал делать обложки и аватарки для групп ВКонтакте и в 12 лет начал зарабатывать
+                | первые деньги. Со временем набираясь опыта, я начал пробовать себя в UI Дизайне,
+                | рисовал сайты, обучался дизайнерским терминам, брал советы у более профессиональных людей в этой специальности.
+                | Я считаю что в данный момент я получил достаточно знайний по UI, чтобы назвать себя профессионалом.
+                | Ещё я занимаюсь UX Дизайном, и надеюсь что в нём преуспею тоже в будущем.
+              a(href="portfolio.html").about__button
+                | ПЕРЕЙТИ В ПОРТФОЛИО
+
+

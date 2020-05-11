@@ -1,29 +1,29 @@
 .interest
-  height: px-to-vw(319, $desktop_md)
+  //height: px-to-vw(319, $desktop_md)
   background-image: url('./section-bg.jpg')
   background-size: cover
   background-repeat: no-repeat
 
   +max-w($laptop_sm)
-    height: px-to-vw(196, $laptop_sm)
+    //height: px-to-vw(196, $laptop_sm)
     background-size: auto
     background-position: top right
 
   +max-w($tablet)
-    height: auto
+    //height: auto
 
 .interest__content
-  height: 100%
+  padding: 54px 0 69px
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
 
   +max-w($tablet)
-    padding: 15px 15px
+    padding: 30px 35px
 
 .interest__title
-  margin-bottom: 5px
+  margin-bottom: 13px
   color: #ffffff
   font-family: $font-family-bold
   font-weight: bold
@@ -31,12 +31,23 @@
   line-height: 29px
   text-align: center
 
+  +max-w($mobile_lg)
+    margin-bottom: 10px
+
 .interest__desctiption
-  margin-bottom: px-to-vw(40, $desktop_md)
+  margin-bottom: px-to-vw(43, $desktop_md)
   color: #ffffff
   font-size: 1.125rem
   line-height: 34px
   text-align: center
+
+  +max-w($tablet)
+    margin-bottom: 35px
+    line-height: 28px
+
+  +max-w($mobile_lg)
+    line-height: 1.7
+    margin-bottom: 20px
 
 .interest__button
   padding: px-to-vw(28, $desktop_md) px-to-vw(177, $desktop_md)
@@ -51,3 +62,4 @@
   &:hover,
   &:focus
     opacity: 0.8
+
