@@ -1,0 +1,115 @@
+.hobby
+  padding: 15px 0
+  .container
+    +max-w(1080)
+      max-width: calc(767px + 30px)
+
+.hobby__content
+
+  +max-w($tablet)
+    padding: 0 20px
+
+.hobby__slide, .hobby__img-wrapper
+  width: 100%
+
+.hobby__content-wrapper
+  display: flex
+  margin-bottom: 40px
+  width: 100%
+
+  &:last-child
+    margin-bottom: 0
+
+    +max-w($mobile_lg)
+      flex-direction: column
+
+  +max-w($mobile_lg)
+    flex-direction: column-reverse
+    flex-wrap: wrap
+    align-items: center
+    text-align: center
+
+.hobby__slider
+  width: 411px
+  margin-right: 50px
+
+  +max-w($laptop_md)
+    width: calc( 40% - 50px )
+
+  +max-w($mobile_lg)
+    margin-right: 0
+    width: unset
+    max-width: 415px
+
+.hobby__slider--right
+  margin-right: 0
+  margin-left: 50px
+
+  +max-w($mobile_lg)
+    margin-left: 0
+
+.hobby__text
+  width: calc( 100% - 441px )
+
+  +max-w($laptop_md)
+    width: 60%
+
+  +max-w($mobile_lg)
+    width: 100%
+    margin-bottom: 15px
+
+.hobby__slider-wrapper
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -45px
+    width: 66px
+    height: 66px
+    transform: translateY(-50%)
+    background-image: url('./right-arrow.png')
+    background-repeat: no-repeat
+    background-size: contain
+    transition: opacity 0.3s
+
+    &:hover,
+    &:focus
+      opacity: 0.7
+
+    +max-w($tablet)
+      width: 40px
+      height: 40px
+      right: -25px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: -45px
+    width: 66px
+    height: 66px
+    transform: translateY(-50%)
+    background-image: url('./left-arrow.png')
+    background-repeat: no-repeat
+    background-size: contain
+    transition: opacity 0.3s
+
+    &:hover,
+    &:focus
+      opacity: 0.7
+
+    +max-w($tablet)
+      width: 40px
+      height: 40px
+      left: -25px
+
+.hobby__title
+  font-family: $font-family-base-bold
+  font-size: 2.25rem
+  line-height: 1.5
+
+.hobby__description
+  font-size: 1.125rem
+  line-height: 1.7

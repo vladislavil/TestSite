@@ -1,7 +1,8 @@
 // VARIABLE
 
 // FONT FAMILY
-$font-family-base: 'OpenSans', sans-serif;
+$font-family-base: 'roboto-regular', sans-serif;
+$font-family-base-bold: 'roboto-mono-bold', sans-serif;
 
 $font-weight-thin: 100;           // Thin (Hairline)
 $font-weight-extra-light: 200;    // Extra Light (Ultra Light)
@@ -20,8 +21,8 @@ $color-background: #fff;
 $color-text-base: #000;
 
 // FONT SIZE
-$line-height-base: 1.5;
-$font-size-base: 14px;
+$line-height-base: 1rem;
+$font-size-base: 1rem;
 
 $h1: $font-size-base * 3;
 $h2: $font-size-base * 2;

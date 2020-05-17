@@ -1,4 +1,20 @@
 extends /layout/app
 
 block content
-  .container
+  .home
+    .container
+      .home__content
+        .home__left-content
+          h1.home__title
+            | ALINA NIKIFOROVA
+          p.home__description
+            | Привет! Меня зовут Алина, мне 18 лет. Я учусь в ДонНТУ
+            | на веб-дизайнера, но уже сейчас пробую свои силы в дизайне.
+            | Переходи к портфолио, чтобы ознакомться с моими работами.
+          a(href="#").home__button
+            | Перейти в портфолио
+        .home__right-content
+          .home__photo-bottom
+            img(src="../../images/main-photo2.png", alt="main-photo").home__img
+          .home__photo-top
+            img(src="../../images/main-photo1.png", alt="main-photo").home__img

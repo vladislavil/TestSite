@@ -1,0 +1,105 @@
+.about
+  padding: 120px 0 20px
+
+  +max-w($tablet)
+    padding: 90px 0 20px
+
+.about__content
+  display: flex
+  margin-bottom: 40px
+
+  +max-w($mobile_md)
+    flex-wrap: wrap
+    margin-bottom: 25px
+    justify-content: center
+
+.about__card-wrapper
+  width: 300px
+  margin-right: 35px
+  box-shadow: -6px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05)
+
+  +max-w($tablet)
+    width: 250px
+
+  +max-w($mobile_md)
+    margin-right: 0
+    margin-bottom: 25px
+
+.about__card
+  padding: 42px
+
+  +max-w($tablet)
+    padding: 32px
+
+.about__info
+  font-size: 1.125rem
+  line-height: 1.5
+
+.about__img
+  line-height: 0
+  margin-top: -152px
+  margin-bottom: 32px
+  width: 220px
+
+  +max-w($tablet)
+    width: 150px
+    margin: -100px auto 20px
+
+.about__text
+
+  +max-w($mobile_md)
+    text-align: center
+
+.about__title
+  font-family: $font-family-base-bold
+  font-size: 2.25rem
+  line-height: 1.5
+  color: #1f2c63
+  margin-bottom: 19px
+
+  +max-w($mobile_md)
+    margin-bottom: 10px
+
+.about__description
+  max-width: 708px;
+  font-size: 1rem
+  line-height: 1.6
+
+.about__panel
+  padding: px-to-vw(50, $desktop_md) px-to-vw(80, $desktop_md)
+  box-shadow: -6px 0px 10px rgba(0, 0, 0, 0.1)
+  border: 1px solid rgba(0, 0, 0, 0.1)
+
+.about__socials
+  display: flex
+  justify-content: space-between
+
+  +max-w(550)
+    flex-wrap: wrap
+    margin: 0 -10px
+
+.about__social
+  display: flex
+  align-items: center
+  margin-right: 15px
+  transition: opacity 0.3s
+
+  &:last-child
+    margin-right: 0
+
+    +max-w(550)
+      margin-right: 10px
+
+  &:hover,
+  &:focus
+    opacity: 0.7
+
+  +max-w(550)
+    width: calc(50% - 20px)
+    margin: 0 10px 20px
+
+.about__icon
+  width: 30px
+  height: 30px
+  margin-right: 10px

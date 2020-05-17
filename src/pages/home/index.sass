@@ -1,0 +1,129 @@
+.home__content
+  display: flex
+  padding: 20px 0
+
+  +max-w($mobile_md)
+    flex-wrap: wrap
+    padding-bottom: 20px
+
+.home__left-content
+  display: flex
+  flex-direction: column
+  background-image: url('./main-bg.png')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: top left
+  padding: 180px 0 30px
+  width: 62%
+
+  +max-w($tablet)
+    padding: 100px 0 30px
+
+  +max-w($mobile_md)
+    width: 100%
+    align-items: center
+
+.home__title
+  font-family: $font-family-base-bold
+  font-size: 3.875rem
+  line-height: 1.5
+
+  +max-w($mobile_md)
+    text-align: center
+
+.home__description
+  font-size: 1.125rem
+  line-height: 	1.875
+  margin-bottom: px-to-vw(69, $desktop_md)
+
+  +max-w($mobile_md)
+    text-align: center
+
+.home__button
+  display: block
+  color: #ffffff
+  font-family: $font-family-base-bold
+  font-size: 1.125rem
+  text-transform: uppercase
+  padding: 35px 69px
+  border: 5px solid transparent
+  border-radius: 50px
+  background-color: #1f2c63
+  background-repeat: no-repeat
+  margin-right: auto
+  text-align: center
+  transition: color 0.3s, background-color 0.3s ease-in, border 0.3s
+
+  &:hover,
+  &:focus
+    color: #1f2c63
+    border-color: #1f2c63
+    background-color: #ffffff
+
+  +max-w($laptop_md)
+    padding: 25px 49px
+
+  +max-w($tablet)
+    padding: 20px 39px
+
+  +max-w($mobile_lg)
+    padding: 15px 29px
+
+  +max-w($mobile_md)
+    margin-right: 0
+
+  +max-w($mobile_sm)
+    width: 100%
+
+.home__right-content
+  position: relative
+  display: flex
+  align-items: flex-start
+  width: calc(38% + 100px)
+  margin-left: 100px
+
+  +max-w($tablet)
+    margin-left: 50px
+    width: calc( 38% + 50px )
+
+  +max-w($mobile_md)
+    width: 100%
+    margin-left: 0
+
+.home__photo-bottom
+  position: absolute
+  top: 89px
+  left: -49px
+  width: 365px
+  height: auto
+
+  +max-w($laptop_md)
+    width: 300px
+
+  +max-w($tablet)
+    width: 200px
+    left: 0
+    top: 70px
+
+  +max-w($mobile_lg)
+    position: static
+    top: unset
+    left: unset
+    margin: 0 auto
+    width: unset
+    max-width: 365px
+
+.home__photo-top
+  position: absolute
+  top: 0
+  right: 0
+  width: 335px
+
+  +max-w($laptop_md)
+    width: 275px
+
+  +max-w($tablet)
+    width: 200px
+
+  +max-w($mobile_lg)
+    display: none
