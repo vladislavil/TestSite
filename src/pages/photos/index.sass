@@ -1,0 +1,71 @@
+.photos
+  width: 100%
+
+  +max-h($tablet)
+    .container
+      max-width: calc(1300px + 30px)
+
+.photos__content
+  display: flex
+  padding: 20px 0
+
+  +max-w($mobile_lg)
+    flex-direction: column
+
+.photos__left-content
+  width: calc( 30% - 50px )
+  margin-right: 50px
+  z-index: 2
+  position: relative
+
+  +max-w($mobile_lg)
+    width: 100%
+    margin-bottom: 20px
+    margin-right: 0
+
+.photos__right-content
+  width: 70%
+
+  +max-w($mobile_lg)
+    width: 100%
+
+.photos__row
+  display: flex
+  flex-wrap: wrap
+  margin: -10px
+
+.photos__col
+  line-height: 0
+  display: block
+  width: calc( 33.33% - 20px )
+  margin: 10px
+
+  +max-w($mobile_md)
+    width: calc(50% - 20px)
+
+  +max-w($mobile_xs)
+    width: 100%
+
+.photos__title
+  position: absolute
+  top: 60px
+  right: px-to-vw(-122, $desktop_md)
+  font-family: $Antiqua
+  font-size: px-to-vw(95, $desktop_md)
+  width: px-to-vw(575, $desktop_md)
+  background-color: #ffffff
+  text-transform: uppercase
+  text-align: center
+
+  +min-w($laptop_md)
+    +max-h($tablet)
+      font-size: px-to-vh(60, $tablet)
+
+  +max-w($laptop_sm)
+    top: 30px
+
+  +max-w($mobile_lg)
+    width: 100%
+    text-align: center
+    position: static
+    font-size: 1.875rem

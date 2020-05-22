@@ -1,0 +1,55 @@
+extends /layout/app
+
+block content
+  .about
+    .about__content
+      .about__photo-wrapper
+        .about__photo
+          img(src="../../images/i_in_circle.png", alt="").about__img
+      .about__text
+        .about__text-wrapper
+          h2.about__title
+            | Анна Воронецкая
+          h2.about__subtitle
+            | beginning designer
+        p.about__description-top
+          | Дата рождения:
+          span.ml 22.10.2001
+        p.about__description-title
+          | О себе:
+        ol.about__list
+          li.about__description
+            | Я не идеальна, но так даже интереснее
+          li.about__description
+            | Считаю, что простота – ключ к счастью
+          li.about__description
+            | Непреодолимая страсть к путешествиям
+          li.about__description
+            | Дизайн был создан для того, чтобы я его освоила
+        p.about__description-main
+          | Целеустремленная и легкообучаемая. Люблю работать в команде. Всегда нацелена на достижение лучшего результата. Люблю узнавать новое, слежу за современными тенденциями.
+        p.about__description-main
+          | Владею английским языком(базовым). В свободное время занимаюсь фотосъемкой и обработкой фотографий.
+        ul.about__hobbies
+          li.about__description
+            | Хобби:
+          li.about__hobby
+            .about__icon
+              img(src="../../images/traveler.png", alt="icon")
+            .about__hobby-text
+              | ПУТЕШЕСТВИЯ
+          li.about__hobby
+            .about__icon
+              img(src="../../images/fashion.png", alt="icon")
+            .about__hobby-text
+              | ДИЗАЙН
+          li.about__hobby
+            .about__icon
+              img(src="../../images/korea.png", alt="icon")
+            .about__hobby-text
+              | K-POP
+          li.about__hobby
+            .about__icon
+              img(src="../../images/photo.png", alt="icon")
+            .about__hobby-text
+              | ФОТОГРАФИЯ

@@ -1,4 +1,20 @@
 extends /layout/app
 
 block content
-  .container
+  .home
+    .container
+      .home__content
+        .home__left-content
+          .home__wrapper
+            h1.home__title
+              .home__icon
+                img(src="../../images/heart.png", alt="hearts")
+              | Only my dream
+
+            h1.home__subtitle
+              | keeps me alive
+            p.home__text
+              | «Простота — необходимое условие прекрасного»  /Лев Толстой/
+        .home__right-content
+          .home__photo
+            img(src="../../images/i.png", alt="my photo").home__img

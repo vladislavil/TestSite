@@ -1,0 +1,139 @@
+.home
+  flex-basis: 100%
+
+.home__content
+  display: flex
+  padding: 20px 0
+  justify-content: flex-end
+
+  +max-w($mobile_lg)
+    flex-direction: column
+    align-items: center
+
+.home__left-content
+  position: relative
+  display: flex
+  width: calc(32% + 45px)
+  margin-right: 45px
+  z-index: 2
+
+.home__right-content
+  width: 60%
+  line-height: 0
+
+.home__wrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-50%)
+
+.home__photo
+  flex-basis: 100%
+
+.home__icon
+  width: px-to-vw(106, $desktop_md)
+
+.home__title
+  display: flex
+  font-family: $Dutch
+  font-size: px-to-vw(120, $desktop_md)
+  line-height: 1.5
+  background-color: #ffffff
+  position: relative
+  padding-right: px-to-vw(65, $desktop_md)
+  white-space: nowrap
+
+  &::before
+    content: ""
+    position: absolute
+    width: px-to-vw(315, $desktop_md)
+    height: 1px
+    bottom: 0
+    right: 0
+    background-color: #000000
+
+.home__subtitle
+  font-family: $Dutch
+  font-size: px-to-vw(120, $desktop_md)
+  line-height: 1.2
+  background-color: #ffffff
+  margin-bottom: px-to-vw(58, $desktop_md)
+  padding-right: px-to-vw(60, $desktop_md)
+  display: flex
+  white-space: nowrap
+
+.home__text
+  font-size: px-to-vw(30, $desktop_md)
+  width: px-to-vw(510, $desktop_md)
+
+
++max-w($mobile_lg)
+  .home__left-content
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+
+  .home__right-content
+    width: 100%
+
+  .home__wrapper
+    width: 100%
+    position: static
+    top: unset
+    left: unset
+    transform: none
+    align-items: center
+
+  .home__title
+    background-color: transparent
+    word-wrap: normal
+    padding: 0
+
+    &::before
+      display: none
+
+  .home__subtitle
+    background-color: transparent
+    word-wrap: normal
+    padding: 0
+
+  .home__text
+    font-size: 13px
+    width: 100%
+    text-align: center
+
++min-w($laptop_sm)
+  +max-h($tablet)
+    .home
+      .container
+        max-width: calc(900px + 30px)
+
+    .header__content
+      padding-top: 15px
+
+    .home__left-content
+      width: 30%
+
+    .home__right-content
+      width: 70%
+
+    .home__wrapper
+
+    .home__title
+      font-size: px-to-vh(60, $tablet)
+      padding-right: px-to-vh(30, $tablet)
+
+      &::before
+        width: px-to-vh(150, $tablet)
+
+    .home__subtitle
+      font-size: px-to-vh(60, $tablet)
+      padding-right: px-to-vh(100, $tablet)
+
+    .home__text
+      max-width: 300px
+      font-size: px-to-vh(20, $tablet)
+

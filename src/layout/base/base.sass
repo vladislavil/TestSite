@@ -32,6 +32,21 @@ body
   text-align: left
   background-color: $color-background
 
+html, body
+  font-size: $font-size-base
+
+  // +max-h($tablet)
+  //   font-size: 0.75rem
+
+  // +max-w($laptop_lg)
+  //     font-size: 0.75rem
+
+  // +max-w($tablet)
+  //   font-size: 0.65rem
+
+  // +max-w($mobile_md)
+  //   font-size: 0.6rem
+
 // IE10+ doesn't honor `<meta name="viewport">` in some cases.
 @at-root
   @-ms-viewport
@@ -51,3 +66,12 @@ ol, ul
 img
   max-width: 100%
   height: auto
+
+a
+  text-decoration: none
+  color: $color-text-base
+
+.container
+  max-width: calc(1785px + 30px)
+  padding: 0 15px
+  margin: 0 auto

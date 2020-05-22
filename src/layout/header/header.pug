@@ -1,1 +1,33 @@
-header.header HEADER
+header.header
+  .container
+    .header__content
+      .header__left-content
+        a(href="index.html").header__logo
+          .header__img-wrapper
+            img(src="../../images/icon.png" alt="logo").header__img
+          | Анна Воронецкая
+      nav.header__nav
+        ul.header__list
+          li.header__item
+            a(href="index.html").header__link
+              | Главная
+          li.header__item
+            a(href="about.html").header__link
+              | Обо мне
+          li.header__item
+            a(href="#").header__link
+              | Портфолио
+              img(src="../../images/arrow.png", alt="").header__arrow
+            ul.list
+              li.header__item.mb
+                a(href="portfolio-adobe.html").header__link
+                  img(src="../../images/photoshop.png", alt="").header__icon
+                  | Adobe Photoshop
+              li.header__item
+                a(href="portfolio-adobe.html").header__link
+                  img(src="../../images/photo.png", alt="").header__icon
+                  | Фотографии
+
+          li.header__item
+            a(href="photos.html").header__link
+              | Фотокарточки

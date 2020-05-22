@@ -1,0 +1,184 @@
+.about
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  background-image: url('./mayak.png')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center center
+  z-index: -1
+
+  +max-h($tablet)
+    background-size: cover
+    .about__hobby-text
+      font-size: 14px
+    .about__title, .about__subtitle
+      font-size: 1.125rem
+    .about__description
+      font-size: 1rem
+    .about__text-wrapper
+      top: -10px
+    .about__description-top
+      margin-bottom: 10px
+    .about__list .about__description
+      padding: 0 10px
+      margin-bottom: 5px
+    .about__list
+      margin-bottom: 5px
+    .about__hobbies
+      margin-top: 5px
+    .about__photo
+      max-width: 250px
+  +max-w($laptop_lg)
+    background-size: cover
+    .about__hobby-text
+      font-size: 14px
+    .about__title, .about__subtitle
+      font-size: 1.125rem
+    .about__description, .about__description-main
+      font-size: 1rem
+    .about__text-wrapper
+      top: -10px
+    .about__description-top
+      margin-bottom: 10px
+    .about__list .about__description
+      padding: 0 10px
+      margin-bottom: 5px
+    .about__list
+      margin-bottom: 5px
+    .about__hobbies
+      margin-top: 5px
+    .about__photo
+      max-width: 250px
+
+    +max-w($tablet)
+      .about__text-wrapper
+        position: static
+        width: 100%
+        text-align: right
+        margin-bottom: 10px
+
+    +max-w($mobile_lg)
+      background-image: none
+      z-index: 1
+      .about__hobby-text
+        font-size: 12px
+      .about__title, .about__subtitle
+        font-size: 16px
+      .about__description, .about__description-main, .ml
+        font-size: 14px
+      .about__description-top
+        margin-bottom: 10px
+      .about__list .about__description
+        padding: 0 10px
+        margin-bottom: 10px
+      .about__list
+        margin-bottom: 10px
+      .about__hobbies
+        margin-top: 10px
+      .about__photo
+        max-width: 200px
+
+.about__content
+  max-width: calc(1200px + 30px)
+  padding: 20px 15px
+  margin: 0 auto
+  background-color: #ffffff
+  display: flex
+  flex-grow: 1
+  align-items: center
+
+  +max-w($laptop_md)
+    max-width: calc(900px + 30px)
+
+  +max-w($mobile_lg)
+    flex-direction: column-reverse
+    align-items: center
+
+
+.about__photo-wrapper
+  width: 40%
+
+  +max-w($mobile_lg)
+    width: 100%
+
+.about__text
+  width: calc(60% - 35px)
+  margin-left: 35px
+
+  +max-w($mobile_lg)
+    width: 100%
+    margin-left: 0
+    margin-bottom: 15px
+
+.about__photo
+  max-width: 339px
+  margin: 0 auto
+
+.about__text
+  position: relative
+
+.about__text-wrapper
+  position: absolute
+  top: px-to-vh(-50, 1050)
+  right: 0
+
+.about__title
+  letter-spacing: 3px
+  font-size: 1.375rem
+
+.about__subtitle
+  font-size: 1.375rem
+  text-transform: uppercase
+
+.about__description-title,
+.about__desctiption-top
+  font-family: $Consolas
+  font-size: 1.3125rem
+
+.about__description-title
+  margin-bottom: 5px
+
+.about__description-top
+  margin-bottom: 20px
+
+.about__description
+  font-family: $Consolas
+  font-size: 1.125rem
+
+.ml
+  font-family: $Consolas
+  font-size: 1.125rem
+  margin-left: 30px
+
+.about__list
+  margin-bottom: 15px
+
+  .about__description
+    position: relative
+    padding: 10px
+
+    &::before
+      content: "-"
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+
+.about__description-main
+  font-family: $Consolas
+  font-size: 1.125rem
+  text-indent: 35px
+
+.about__icon
+  margin-right: 10px
+  max-width: 32px
+  height: auto
+
+.about__hobbies
+  margin-top: 25px
+
+.about__hobby
+  align-items: center
+  display: flex
+  padding-left: 20px

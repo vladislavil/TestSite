@@ -1,0 +1,152 @@
+.header__content
+  display: flex
+  padding-top: 38px
+
+  +max-w($laptop_md)
+    padding-top: 25px
+    flex-wrap: wrap
+
+  +max-w($mobile_lg)
+    padding-top: 15px
+
+.header__left-content
+  display: flex
+  align-items: center
+  margin-right: auto
+
+  +max-w($tablet)
+    width: 100%
+    margin-bottom: 10px
+    margin-right: 0
+
+.header__title
+  font-size: 1.125rem
+  letter-spacing: 3px
+
+  +max-w($laptop_md)
+    font-size: 1rem
+
+  +max-w($mobile_lg)
+    font-size: 14px
+    letter-spacing: 0
+
+.header__nav
+  margin-left: 20px
+
+  +max-w($tablet)
+    margin-left: 0
+    width: 100%
+
+.header__list
+  display: flex
+  align-items: center
+  height: 100%
+
+  +max-w($mobile_lg)
+    justify-content: space-between
+
+.header__item
+  padding: 10px px-to-vw(45, $desktop_md)
+  margin-right: 10px
+
+  +max-w($laptop_sm)
+    padding: 10px
+
+  +max-w($tablet)
+    padding: 10px 15px
+
+  +max-w($mobile_lg)
+    padding: 0
+    margin-right: 10px
+    flex-grow: 1
+
+  &:last-child
+    margin-right: 0
+
+.header__link
+  display: block
+  font-size: 1.125rem
+  letter-spacing: 3px
+  display: flex
+  align-items: center
+  transition: color 0.4s
+
+  &:hover,
+  &:focus
+    color: #418788
+
+  +max-w($laptop_md)
+    font-size: 1rem
+
+  +max-w($mobile_lg)
+    display: flex
+    justify-content: center
+    font-size: 14px
+    letter-spacing: 0
+
+.header__logo
+  display: flex
+  align-items: center
+  transition: opacity 0.4s
+
+  &:hover,
+  &:focus
+    opacity: 0.7
+
+.header__img-wrapper
+  max-width: 39px
+  height: auto
+  margin-right: 10px
+  line-height: 0
+
+  +max-w($mobile_lg)
+    max-width: 25px
+
+.header__img
+  line-height: 0
+
+.header__arrow
+  width: 18px
+
+  +max-w($mobile_lg)
+    width: 15px
+
+.header__icon
+  max-width: 20px
+  height: auto
+  line-height: 0
+  margin-right: 5px
+
+.mb
+  margin-bottom: 5px
+
+.list
+  display: none
+
+.open
+  display: block
+
+.rotate
+  transform: rotate(180deg)
+
+.list
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background: #fff;
+  z-index: 10;
+
+.list .header__item
+  padding: 0
+
+.list .header__item .header__link
+  font-size: 11px
+
+.header__item
+  position: relative
+
+.active
+  color: #418788

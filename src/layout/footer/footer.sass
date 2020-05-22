@@ -2,3 +2,97 @@
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+
+.footer__content
+  padding-top: 40px
+  padding-bottom: 10px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-image: url('./line.png')
+  background-repeat: no-repeat
+  background-position: center top
+
+  +max-w($laptop_md)
+    padding-top: 30px
+
+  +max-w($tablet)
+    background-size: contain
+
+  +max-w($mobile_lg)
+    padding: 25px 0 15px
+    flex-direction: column
+    justify-content: center
+
+.footer__text
+  display: block
+  font-size: 1rem
+
+  +max-w($mobile_lg)
+    text-align: center
+    font-size: 14px
+
+    .footer__author
+    .footer__text
+      letter-spacing: 0
+
+.footer__author
+  .footer__text
+    letter-spacing: 3px
+
+    +max-w($laptop_md)
+      font-size: 1rem
+
+    +max-w($mobile_lg)
+      font-size: 14px
+      letter-spacing: 0
+
+.footer__info
+  +max-w($mobile_lg)
+    margin-bottom: 10px
+
+  .footer__text
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.footer__icons
+  display: flex
+  margin: 0 25px
+
+  +max-w($mobile_lg)
+    margin: 0 0 10px
+
+
+.footer__icon
+  max-width: 57px
+  height: auto
+  line-height: 1
+  display: block
+  margin-right: 25px
+
+  +max-w($laptop_sm)
+    max-width: 47px
+
+  +max-w($tablet)
+    max-width: 37px
+    margin-right: 20px
+
+  +max-w($mobile_lg)
+    max-width: 27px
+    margin-right: 10px
+
+  &:last-child
+    margin-right: 0
+
+.footer__icon img
+  transition: transform 0.4s ease-in-out
+
+  &:hover,
+  &:focus
+    transform: rotate(360deg)
+
+.footer__author
+  text-align: right
+

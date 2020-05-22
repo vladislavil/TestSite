@@ -1,0 +1,115 @@
+.portfolio-photo
+  width: 100%
+
+.portfolio-photo__content
+  display: flex
+  justify-content: flex-end
+  padding: 20px 0
+
+  +max-w($mobile_lg)
+    flex-direction: column
+
+.portfolio-photo__left-content
+  width: calc( 33% - 50px )
+  margin-right: 50px
+  z-index: 2
+  position: relative
+
+  +max-w($mobile_lg)
+    width: 100%
+    margin-bottom: 20px
+    margin-right: 0
+
+.portfolio-photo__right-content
+  width: 64%
+
+  +max-w($mobile_lg)
+    width: 100%
+
+.portfolio-photo__row
+  display: flex
+  flex-wrap: wrap
+  margin: -10px
+
+.portfolio-photo__col
+  display: block
+  width: calc( 33.33% - 20px )
+  margin: 10px
+  text-align: center
+  line-height: 0
+
+  +max-w($mobile_md)
+    width: calc(50% - 20px)
+
+  +max-w($mobile_xs)
+    width: 100%
+
+.portfolio-photo__wrapper-left
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  top: 28%
+  left: 0
+  transform: translateY(-50%)
+
+  +max-w($mobile_lg)
+    position: static
+    top: unset
+    left: unset
+    width: 100%
+    transform: none
+
+.portfolio-photo__title
+  font-family: $Antiqua
+  font-size: px-to-vw(95, $desktop_md)
+  background-color: #ffffff
+  text-transform: uppercase
+  padding-right: px-to-vw(30, $desktop_md)
+  white-space: nowrap
+
+  +max-w($mobile_lg)
+    width: 100%
+    text-align: center
+    position: static
+    font-size: 1.4375rem
+    margin-bottom: 5px
+    white-space: normal
+    padding: 0
+    background-color: transparent
+
+.portfolio-photo__subtitle
+  font-family: $Microsoft
+  font-size: px-to-vw(60, $desktop_md)
+  background-color: #ffffff
+  padding-right: px-to-vw(200, $desktop_md)
+  white-space: nowrap
+
+  +max-w($mobile_lg)
+    width: 100%
+    text-align: center
+    font-size: 1.4375rem
+    white-space: normal
+    padding: 0
+    background-color: transparent
+
++min-w($laptop_sm)
+  +max-h($tablet)
+    .portfolio-photo
+      .container
+        max-width: calc(1200px + 30px)
+
+    .portfolio-photo__left-content
+      width: px-to-vh(300, $tablet)
+
+    .portfolio-photo__right-content
+      width: 64%
+
+    .portfolio-photo__title
+      font-size: px-to-vh(60, $tablet)
+      padding-right: px-to-vh(20, $tablet)
+
+    .portfolio-photo__subtitle
+      font-size: px-to-vh(60, $tablet)
+      padding-right: px-to-vh(30, $tablet)
+      padding-left: 0
