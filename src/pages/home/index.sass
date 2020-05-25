@@ -1,0 +1,115 @@
+.main
+  display: flex
+  align-items: center
+  flex-grow: 1
+  background-color: #E5E5E5
+
+.main__content
+  background-color: #ffffff
+  padding: 30px 35px
+
+.main__title
+  font-style: normal
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 28px
+  margin-bottom: 20px
+
+.main__subtitle
+  margin-bottom: 15px
+  font-size: 1.125rem
+  line-height: 21px
+  color: #000000
+
+.main__mattrs
+  display: flex
+  margin-bottom: 10px
+
+.main__wrapper
+  width: 50%
+  margin-right: 20px
+
+  &:last-child
+    margin-right: 0
+
+
+.main__row
+  justify-content: space-between
+  display: flex
+
+.main__col
+  min-width: 45px
+  margin-bottom: 10px
+  margin-right: 10px
+  border-radius: 5px
+
+  &:last-child
+    margin-right: 0
+
+input
+  font-size: 0.875rem
+  line-height: 16px
+  color: #000000
+  width: 100%
+  padding: 5px
+  background-color: #ECECEC
+  border: none
+  outline: none
+
+.main__mattr
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  .main__subtitle
+    margin-bottom: 0
+    margin-right: auto
+
+  .main__size
+    margin-left: 30px
+
+    select
+      margin-right: 25px
+
+      &:last-child
+        margin-right: 0
+
+select
+  outline: none
+  border: none
+  padding: 8px 10px
+  font-size: 1rem
+  line-height: 19px
+  color: #898989
+  border: none
+  background: #D8D8D8
+  border-radius: 5px
+
+option
+  outline: none
+  border: none
+  font-size: 1rem
+  line-height: 19px
+  color: #898989
+
+  &:hover,
+  &:focus
+    background-color: #C0C0C0
+
+option:checked
+  background-color: #C0C0C0
+
+.main__button
+  display: block
+  font-size: 1rem
+  line-height: 19px
+  color: #FFFFFF
+  background: #4200FF
+  border-radius: 5px
+  width: 100%
+  padding: 16px 0
+  text-align: center
+  transition: box-shadow 0.3s ease-in-out
+
+  &:hover,
+  &:focus
+    box-shadow: 0px 4px 10px rgba(0, 117, 255, 0.36)
